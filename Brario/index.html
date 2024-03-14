@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <title>Brario</title>
+    <link rel="shortcut icon" href="Sprites/logo.png" type="image/x-icon">
+</head>
+<body> 
+</body>
+<script src="Rectangle.js"></script>
+<script src="Player.js"></script>
+<script src="Sprites.js"></script>
+<script src="Background.js"></script>
+<script>
+var canvas = document.createElement("canvas");
+var context = canvas.getContext("2d");
+document.body.appendChild(canvas);
+canvas.width = 600;
+canvas.height = 480;
+
+var player = new Player();
+var background = new Background();
+
+document.addEventListener("keypress", onKeyPress);
+
+function onKeyPress()
+{   
+    if(event.which == 68 || event.which == 100 )
+    {
+        if(player.velocity < 9)
+        {
+            player.velocity += 3
+        }
+    }
+    if(event.which == 65 || event.which == 97 )
+    {   
+
+        if(player.velocity > -9)
+        {
+            player.velocity -= 3
+        }
+    }
+if(event.which == 83 || event.which == 115)       //*LookDown*
+    {
+        var down = true
+    }
+    /*if(event.which == 44)           //*Sprint*
+    {   if(player.velocity < 20){
+            player.velocity += 5
+        }
+
+        if(player.velocity > -15){
+            player.velocity -= 5
+        }
+    }*/
+}
+
+var actual = 0;
+var wait = 0;
+
+
+FPS = 20;
+
+var timer = setInterval(loop, 1000/FPS);
+
+function loop()
+{   context.fillStyle = "rgb(0, 0, 0)";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+
+    background.draw()
+
+    player.draw();
+
+    player.update()
+}
+
+</script>   
+</html>

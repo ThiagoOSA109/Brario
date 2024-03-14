@@ -1,0 +1,29 @@
+Implementar:
+
+Cogumelo Vermelho: faz o brario crescer;
+
+Flor vermelha: faz o brario atirar fogo;
+
+Gumba: morrer para brario atravez de uma pisada e pelo fogo da flor;
+
+Acertar Blocos: Acertar tanto  Blocos quebraveis como os de interrogação, com os de interrogação saido moedas e outros itens deles;
+
+Tartaruga e seu casco: Poder matar a Tartaruga, arremessar seu casco e que junto possa matar Gumbas;
+
+Hud: Pontuação, contagem de moedas, mapa, e tempo;
+
+Entrar no Cano: poder entrar no cano e acessar a sala secreta;
+
+Final: Agarrar a Bandeira e entrar no castelo;
+
+Ver com betito:
+
+Delay Inicio de Sprite: Delay ao começar a carregar sprite de andar;
+
+Encaixar sprite de virada de direção: Encaixar o quinto sprite do brario assim que mudar de direção;
+
+Sprint: ver como se clicar dois botões ao mesmo tempo;
+
+Obstaculos, Plataformas e Buracos: ver como se gerar cubos para representar cada Obstaculo e Plataforma e nao os gerarem para formar os buracos; 
+
+Melhores formas de organizar o codigo;
